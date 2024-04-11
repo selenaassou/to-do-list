@@ -5,6 +5,20 @@
     box-sizing: border-box;    
 }
 
-/* .container {
+/* notice we access the classes in html file using the "dot" */
+.container {
     width: 100%;
-} */
+    min-height: 100vh;
+    /* without this below, the html page will look blank/white ! Use also W3SCHOOLS for quick reference ! */
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px ;
+    border-radius: 10px;
+}
