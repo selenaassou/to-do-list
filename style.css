@@ -1,3 +1,5 @@
+/*  Author: soukaina assou */
+
 * {
     margin: 0;
     padding: 0;
@@ -61,9 +63,30 @@ button{
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    /* background color orange  |  was background: #ff5945; */
+    background: #11afc1;
+    /* color button text: white */
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+/* The ::before selector inserts something before the content of each selected element(s). */
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
 }
