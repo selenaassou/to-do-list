@@ -5,7 +5,7 @@
     box-sizing: border-box;    
 }
 
-/* notice we access the classes in html file using the "dot" */
+/* notice we access the CLASSES in html file using the "dot" */
 .container {
     width: 100%;
     min-height: 100vh;
@@ -35,4 +35,35 @@
 .todo-app h2 img{
     width: 30px;
     margin-left: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    /* boarder removes frame around input */
+    border: none;
+    outline: none;
+    background: transparent;
+    /* padding here makes the field larger to fit the text */
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
 }
