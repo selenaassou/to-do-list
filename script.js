@@ -44,7 +44,7 @@ listContainer.addEventListener("click", function(e){
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
 }
-// 2-display the data that was stored/saved all along.
+// 2-display the data that was stored/saved in our list all along.
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
