@@ -95,11 +95,28 @@ ul li::before{
 }
 ul li.checked{
     color: #555;
+    /* color: #a21313; no change! hm ... */
     text-decoration: line-through;
 }
-ul li.checked ::before{
+ul li.checked::before{
     background-image: url(images/checked.png)
 }
-
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    /* this makes x box circle and not the default square */
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+    /* background: #d776c2; testing pink color when hovering over x */
+}
 
 
