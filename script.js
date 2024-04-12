@@ -23,6 +23,7 @@ function addTask(){
         li.appendChild(span); 
     }
     inputBox.value = "";
+    saveData();
 }
 
 // Action when Task is clicked. Also, Action when clicking the cross x to delete the Task.
@@ -30,8 +31,21 @@ function addTask(){
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
+        saveData();
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
+        saveData();
     }
 }, false);
+
+// We want to store the data on the browser. When we refresh the page it doesn't disappear!
+// 1-save the data
+function saveData(){
+    localStorage.setItem("data", listContainer.innerHTML);
+}
+// 2-display the data that was stored/saved all along.
+function showTask(){
+    listContainer.innerHTML = localStorage.getItem("data");
+}
+showTask();
