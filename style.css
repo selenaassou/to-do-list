@@ -77,7 +77,7 @@ ul li{
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
-    /* this line showed the unchecked imag ... even after styling "ul li::before" interesting! wpndering why hm ... */
+    /* this line showed the unchecked imag ... even after styling "ul li::before" interesting! wondering why hm ... */
     position: relative;
 }
 /* The ::before selector inserts something before the content of each selected element(s). */
