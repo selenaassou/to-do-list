@@ -77,6 +77,8 @@ ul li{
     padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
+    /* this line showed the unchecked imag ... even after styling "ul li::before" interesting! wpndering why hm ... */
+    position: relative;
 }
 /* The ::before selector inserts something before the content of each selected element(s). */
 ul li::before{
@@ -89,4 +91,15 @@ ul li::before{
     background-size: cover;
     background-position: center;
     top: 12px;
+    left: 8px;
 }
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked ::before{
+    background-image: url(images/checked.png)
+}
+
+
+
