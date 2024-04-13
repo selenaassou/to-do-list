@@ -7,4 +7,5 @@ Main Operations:
 -> Next: \
       Add Compliment after finishing the list & Animation. \
       Add Next Day To-Do-List. \
-      (Can add more ... but I have other projects right now :) )
+      (GOOD ONE TO TRY FIRST) : Instead of having a cross to delete, have three dots to choose from as dropdown: delete/edit. \
+      (Can add more ... but I have other projects right now :) ) 
