@@ -1,4 +1,5 @@
-Fun Prroject! A to-do list application to manage daily tasks. \
+:raised_hands: Fun Project! A to-do list application to manage daily tasks. :raised_hands: \
+I started using this todo-list more than paper cuz it's interactive and fun. Life-changing ! \
 Main Operations: 
   - Add task
   - Complete task (Check mark)
